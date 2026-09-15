@@ -9,22 +9,22 @@ description: Регистрация, API-ключ и первые запросы
 
 ## 1. API Key
 
-Создайте ключ в панели APIA1 и храните его в секретах окружения.
+Создайте ключ в панели A1 API и храните его в секретах окружения.
 
 ## 2. OpenAI SDK
 
 ```python
 from openai import OpenAI
 import os
-client=OpenAI(base_url="https://apia1.com/api/v1",api_key=os.environ["APIA1_API_KEY"])
-result=client.chat.completions.create(model="openai/gpt-4o",messages=[{"role":"user","content":"Что такое APIA1?"}])
+client=OpenAI(base_url="https://apia1.com/api/v1",api_key=os.environ["A1_API_KEY"])
+result=client.chat.completions.create(model="openai/gpt-4o",messages=[{"role":"user","content":"Что такое A1 API?"}])
 print(result.choices[0].message.content)
 ```
 
 ## 3. Каталог моделей
 
 ```bash
-curl "https://apia1.com/api/v1/models" -H "Authorization: Bearer <APIA1_API_KEY>"
+curl "https://apia1.com/api/v1/models" -H "Authorization: Bearer <A1_API_KEY>"
 ```
 
 Перед production включите timeout, обработку 429/5xx и логирование usage.
@@ -34,7 +34,7 @@ curl "https://apia1.com/api/v1/models" -H "Authorization: Bearer <APIA1_API_KEY>
 ```python
 stream=client.chat.completions.create(
     model="openai/gpt-4o",
-    messages=[{"role":"user","content":"Расскажи коротко об APIA1"}],
+    messages=[{"role":"user","content":"Расскажи коротко об A1 API"}],
     stream=True,
 )
 for chunk in stream:
@@ -45,8 +45,8 @@ for chunk in stream:
 ## 5. Проверка ключа и баланса
 
 ```bash
-curl "https://apia1.com/api/v1/models" -H "Authorization: Bearer $APIA1_API_KEY"
-curl "https://apia1.com/api/v1/balance" -H "Authorization: Bearer $APIA1_API_KEY"
+curl "https://apia1.com/api/v1/models" -H "Authorization: Bearer $A1_API_KEY"
+curl "https://apia1.com/api/v1/balance" -H "Authorization: Bearer $A1_API_KEY"
 ```
 
 Если запрос возвращает `401` — проверьте ключ; если `403` — доступ к модели не выдан; при `402`/`429` пополните баланс или снизьте частоту запросов.

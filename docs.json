@@ -1,14 +1,14 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "APIA1",
+  "name": "A1 API",
   "description": "Единый API для сотен нейросетей: текст, изображения, видео, аудио и эмбеддинги",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
       {
@@ -202,8 +202,8 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
   },
   "navbar": {
     "links": [
@@ -214,7 +214,7 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Панель APIA1",
+      "label": "Панель A1 API",
       "href": "https://apia1.com"
     }
   },

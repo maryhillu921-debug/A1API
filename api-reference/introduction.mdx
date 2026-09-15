@@ -1,11 +1,11 @@
 ---
 title: Введение в API
-description: Обзор APIA1 API и аутентификации
+description: Обзор A1 API API и аутентификации
 ---
 
 # Введение в API
 
-APIA1 предоставляет REST API с OpenAI-совместимыми endpoints.
+A1 API предоставляет REST API с OpenAI-совместимыми endpoints.
 
 ## Base URL
 
@@ -16,7 +16,7 @@ APIA1 предоставляет REST API с OpenAI-совместимыми end
 ## Авторизация
 
 ```http
-Authorization: Bearer <APIA1_API_KEY>
+Authorization: Bearer <A1_API_KEY>
 ```
 
 Обрабатывайте 400/401/403/404 отдельно от временных 429/5xx. Для временных ошибок используйте ограниченный backoff.

@@ -5,13 +5,13 @@ description: Унифицированный API для сотен нейросе
 
 # Добро пожаловать
 
-APIA1 — единая точка доступа к текстовым, мультимодальным и генеративным AI-моделям. Клиент использует один API Key и стандартные REST/SDK-интерфейсы.
+A1 API — единая точка доступа к текстовым, мультимодальным и генеративным AI-моделям. Клиент использует один API Key и стандартные REST/SDK-интерфейсы.
 
 ## Быстрый старт
 
 ```python
 from openai import OpenAI
-client=OpenAI(base_url="https://apia1.com/api/v1", api_key="<APIA1_API_KEY>")
+client=OpenAI(base_url="https://apia1.com/api/v1", api_key="<A1_API_KEY>")
 r=client.chat.completions.create(model="openai/gpt-4o",messages=[{"role":"user","content":"Привет!"}])
 print(r.choices[0].message.content)
 ```

@@ -12,7 +12,7 @@ Text-to-Speech.
 ## Авторизация
 
 ```http
-Authorization: Bearer <APIA1_API_KEY>
+Authorization: Bearer <A1_API_KEY>
 ```
 
 ## Параметры
@@ -22,7 +22,7 @@ Authorization: Bearer <APIA1_API_KEY>
 ## Пример
 
 ```bash
-curl -X POST "https://apia1.com/api/v1/audio/speech" -H "Authorization: Bearer <APIA1_API_KEY>" -H "Content-Type: application/json" -d '{"model":"<MODEL_ID>","input":"Привет","voice":"<VOICE_ID>"}' --output speech.mp3
+curl -X POST "https://apia1.com/api/v1/audio/speech" -H "Authorization: Bearer <A1_API_KEY>" -H "Content-Type: application/json" -d '{"model":"<MODEL_ID>","input":"Привет","voice":"<VOICE_ID>"}' --output speech.mp3
 ```
 
 ## Ошибки

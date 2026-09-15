@@ -12,7 +12,7 @@ Speech-to-Text.
 ## Авторизация
 
 ```http
-Authorization: Bearer <APIA1_API_KEY>
+Authorization: Bearer <A1_API_KEY>
 ```
 
 ## Параметры
@@ -22,7 +22,7 @@ Multipart: `file`, `model`; дополнительно language, response format
 ## Пример
 
 ```bash
-curl -X POST "https://apia1.com/api/v1/audio/transcriptions" -H "Authorization: Bearer <APIA1_API_KEY>" -F "model=<MODEL_ID>" -F "file=@audio.mp3"
+curl -X POST "https://apia1.com/api/v1/audio/transcriptions" -H "Authorization: Bearer <A1_API_KEY>" -F "model=<MODEL_ID>" -F "file=@audio.mp3"
 ```
 
 ## Ошибки
