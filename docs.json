@@ -4,9 +4,9 @@
   "name": "A1 API",
   "description": "Единый API для сотен нейросетей: текст, изображения, видео, аудио и эмбеддинги",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#22C55E",
-    "dark": "#15803D"
+    "primary": "#3EA4EC",
+    "light": "#7CC4F5",
+    "dark": "#0E72BC"
   },
   "favicon": "/favicon.png",
   "navigation": {
@@ -233,8 +233,8 @@
   "background": {
     "decoration": "gradient",
     "color": {
-      "light": "#F6FCF8",
-      "dark": "#0B1A12"
+      "light": "#FAFCFF",
+      "dark": "#1E1E1E"
     }
   }
 }
